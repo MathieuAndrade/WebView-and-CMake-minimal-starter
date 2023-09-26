@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebView and CMake Starter</title>
+</head>
+<body>
+</body>
+<script>
+    window.onload = function() {
+        document.body.innerText = `hello, ${navigator.userAgent}`;
+        noop('hello').then(function(res) {
+            console.log('noop res', res);
+        });
+        add(1, 2).then(function(res) {
+            console.log('add res', res);
+        });
+    };
+</script>
+</html>
